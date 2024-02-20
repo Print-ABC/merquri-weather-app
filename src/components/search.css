@@ -1,0 +1,86 @@
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    column-gap: 10px;;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #FFFFFF33;
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+
+.input-wrapper:hover {
+    border: solid white;
+}
+
+.input-wrapper > * {
+    background: none;
+    border: 0px transparent;
+}
+
+label {
+    color: #00000066;
+    height: fit-content;
+    font-size: x-small;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: medium;
+}
+
+input:focus {
+    outline-width: 0px;
+}
+
+input, button {
+    border-radius: 15px;
+    border: solid transparent;
+}
+
+button {
+    background-color: #6C40B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 15px 15px;
+}
+
+button:hover {
+    border: solid white;
+}
+
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px
+}
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 3px;
+    height: 10px;
+    background: white;
+    transform: rotate(-40deg);
+    top: 10px;
+    left: 12px
+}
