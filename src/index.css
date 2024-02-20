@@ -3,7 +3,7 @@ body {
   font-family: 'Noto Sans', 'Roboto', 'Arial', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../public/bg-light.png);
+  background-image: url(../public/images/bg-light.png);
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
