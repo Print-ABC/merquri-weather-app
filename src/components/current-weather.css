@@ -1,0 +1,86 @@
+.weather-app-wrapper {
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff33;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.weather-today {
+  max-width: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0px 30px;
+  font-size: small;
+}
+
+.wt-top {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.temp-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-icon-box {
+  width: 50%;
+  max-height: 100px;
+}
+
+.weather-icon-box img {
+    max-width: 100%;
+}
+
+.weather-icon {
+    position: relative;
+    top: -100px;
+    max-width: 100%;
+}
+
+.temp-current {
+  color: #6c40b5;
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.temp-high-low {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.temp-high-low p:nth-child(2) {
+    margin-left: 10px;
+}
+
+.wt-bottom {
+  color: #666666;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: bold;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
