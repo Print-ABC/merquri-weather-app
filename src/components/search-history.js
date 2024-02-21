@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 
 
-function SearchHistory({ history, removeFromHistory }) {
+function SearchHistory({ history, removeFromHistory, setInputValue, setSearchQuery, startSearch }) {
 
     const [currentItems, setCurrentItems] = useState([]);
     const [pageCount, setPageCount] = useState(0);
@@ -26,6 +26,12 @@ function SearchHistory({ history, removeFromHistory }) {
         removeFromHistory(index)
     }
 
+    const handleSearch = (name) => {
+        setInputValue(name)
+        setSearchQuery(name)
+        startSearch()
+    }
+
     return (
         <div className="search-history">
             <div>
@@ -38,7 +44,9 @@ function SearchHistory({ history, removeFromHistory }) {
                         <div className='history-item-right'>
                             <p>{entry.timestamp}</p>
                             {/* Get weather data from this city */}
-                            <button>
+                            <button
+                                onClick={() => handleSearch(entry.name)}
+                            >
                                 <img src='images/search-icon.png' alt='search'></img>
                             </button>
                             {/* Remove history item button */}

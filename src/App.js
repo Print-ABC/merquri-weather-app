@@ -41,6 +41,8 @@ function App() {
       const data = await response.json()
       setCurrWeatherData(data)
       inputValue && addToHistory(data.name, data.sys.country, GetCurrentTimeStamp()) // Only add to search history if input field is not empty
+      setInputValue('')
+      searchQuery('')
     } catch (error) {
       console.log('Error fetching data:', error)
     }
@@ -61,6 +63,9 @@ function App() {
         <SearchHistory
           history={history}
           removeFromHistory={removeFromHistory}
+          setInputValue={setInputValue}
+          setSearchQuery={setSearchQuery}
+          startSearch={fetchData}
         />
       </div>
     </div>
