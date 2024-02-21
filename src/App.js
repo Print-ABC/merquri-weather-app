@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import './App.css';
+import { useState, useEffect } from 'react';
 import SearchBar from './components/search';
 import CurrentWeather from './components/current-weather';
 import SearchHistory from './components/search-history';
@@ -13,11 +13,13 @@ function App() {
   const [currWeatherData, setCurrWeatherData] = useState(null)
   // Store the search history
   const [history, setHistory] = useState([]);
+  // To check if input field is empty
+  const [inputValue, setInputValue] = useState('');
 
   // Call fetch at 1st render using default search query
   useEffect(() => {
     fetchData()
-  }, []) // Empty dependency to ensure fetch called here only once at start
+  }, []) // Empty dependency to ensure fetchData() is only called once at start
 
   // Add an item to search history
   const addToHistory = (city, country, timestamp) => {
@@ -38,7 +40,7 @@ function App() {
       const response = await fetch(GetApiEndPoint(searchQuery))
       const data = await response.json()
       setCurrWeatherData(data)
-      addToHistory(data.name, data.sys.country, GetCurrentTimeStamp)
+      inputValue && addToHistory(data.name, data.sys.country, GetCurrentTimeStamp()) // Only add to search history if input field is not empty
     } catch (error) {
       console.log('Error fetching data:', error)
     }
@@ -48,6 +50,8 @@ function App() {
     <div className="container">
       {/* Search bar component */}
       <SearchBar
+        inputValue={inputValue}
+        setInputValue={setInputValue}
         setSearchQuery={setSearchQuery}
         startSearch={fetchData}
       />

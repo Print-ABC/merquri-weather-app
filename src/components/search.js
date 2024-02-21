@@ -1,10 +1,16 @@
 import './search.css'
 
-const SearchBar = ({ setSearchQuery, startSearch }) => {
+const SearchBar = ({ inputValue, setInputValue, setSearchQuery, startSearch }) => {
+
+    const handleOnChange = (e) => {
+        setInputValue(e.target.value)
+        setSearchQuery(e.target.value)
+    };
     
     const handleOnClick = () => {
-        // Send api request call
-        startSearch()
+        // Call the api only if the input field is not empty
+        inputValue && startSearch()
+        setInputValue(''); // Clear the input field value after submitting
     }
 
     return (
@@ -14,7 +20,8 @@ const SearchBar = ({ setSearchQuery, startSearch }) => {
                 <label>Country</label>
                 <input
                     type='text'
-                    onChange={(e) => setSearchQuery(e.target.value)}
+                    value={inputValue}
+                    onChange={(e) => handleOnChange(e)}
                 />
             </div>
             {/* Search button */}
