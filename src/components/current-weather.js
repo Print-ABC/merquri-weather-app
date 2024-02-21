@@ -2,6 +2,7 @@ import './current-weather.css'
 import { GetCurrentTimeStamp, RoundNearestWholeNum } from '../helpers'
 
 const CurrentWeather = ({ data }) => {
+    
     return (
             <div className='weather-today'>
                 <div className='wt-top'>

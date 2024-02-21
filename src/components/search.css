@@ -14,6 +14,7 @@
     background-color: #FFFFFF33;
     border-radius: 15px;
     padding: 0px 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .input-wrapper:hover {
@@ -25,38 +26,38 @@
     border: 0px transparent;
 }
 
-label {
+.input-wrapper label {
     color: #00000066;
     height: fit-content;
     font-size: x-small;
 }
 
-input {
+.input-wrapper input {
     width: 100%;
     height: 100%;
     position: relative;
     font-size: medium;
-}
-
-input:focus {
-    outline-width: 0px;
-}
-
-input, button {
     border-radius: 15px;
     border: solid transparent;
 }
 
-button {
+.input-wrapper input:focus {
+    outline-width: 0px;
+}
+
+.search-wrapper button {
     background-color: #6C40B5;
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
     padding: 15px 15px;
+    border-radius: 15px;
+    border: solid transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+.search-wrapper button:hover {
     border: solid white;
 }
 
