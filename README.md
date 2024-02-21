@@ -2,8 +2,6 @@
 
 2-day take home coding assignment given by [Merquri](https://merquri.io/) for Software Engineer (Frontend) job.
 
-Link to the webapp deployed on [Next.js](https://nextjs.org/) is [here](https://).
-
 This is a webapp that displays the current weather of a given city/country.
 
 ## Getting Started
