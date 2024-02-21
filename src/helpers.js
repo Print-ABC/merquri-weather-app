@@ -1,4 +1,4 @@
-const API_KEY = '4194cfa249cb9bf8ea8ea06395a6a3a0'
+const API_KEY = 'ecf32d84311243a895766cd81f14a6e2'
 const UNIT = 'metric'
 
 export const DEFAULT_SEARCH_QUERY = 'Singapore'

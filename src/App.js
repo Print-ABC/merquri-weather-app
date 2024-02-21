@@ -22,9 +22,9 @@ function App() {
   }, []) // Empty dependency to ensure fetchData() is only called once at start
 
   // Add an item to search history
-  const addToHistory = (city, country, timestamp) => {
-    const place =  `${city}, ${country}`
-    setHistory([{ place, timestamp }, ...history]);
+  const addToHistory = (name, country, timestamp) => {
+    const location = `${name}, ${country}`
+    setHistory([{ name, location, timestamp }, ...history]);
   };
 
   // Remove an item from search history
@@ -58,7 +58,10 @@ function App() {
       {/* Weather data display and search history component */}
       <div className='weather-display-wrapper'>
         {currWeatherData && <CurrentWeather data={currWeatherData} />}
-        <SearchHistory history={history} removeFromHistory={removeFromHistory} />
+        <SearchHistory
+          history={history}
+          removeFromHistory={removeFromHistory}
+        />
       </div>
     </div>
   );

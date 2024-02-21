@@ -59,6 +59,7 @@
 
 .search-wrapper button:hover {
     border: solid white;
+    cursor: pointer;
 }
 
 .gg-search {

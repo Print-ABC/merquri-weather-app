@@ -4,8 +4,6 @@
   margin: 10px auto;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid white; */
-  /* max-height: fit-content; */
 }
 
 .weather-display-wrapper {
