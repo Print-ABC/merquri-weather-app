@@ -3,7 +3,6 @@ import { GetCurrentTimeStamp, RoundNearestWholeNum } from '../helpers'
 
 const CurrentWeather = ({ data }) => {
     return (
-        <div className='weather-app-wrapper'>
             <div className='weather-today'>
                 <div className='wt-top'>
                     <div className='temp-box'>
@@ -20,14 +19,11 @@ const CurrentWeather = ({ data }) => {
                 </div>
                 <div className='wt-bottom'>
                     <p className='city'>{data.name}, {data.sys.country}</p>
-                    {/* <p>01-09-2022 09:41am</p> */}
                     <p>{GetCurrentTimeStamp()}</p>
                     <p>Humidity: {data.main.humidity}%</p>
                     <p>{data.weather[0].main}</p>
                 </div>
             </div>
-            <div className='search-history'></div>
-        </div>
     )
 }
 

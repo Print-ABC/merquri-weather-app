@@ -7,3 +7,13 @@
   /* border: 1px solid white; */
   /* max-height: fit-content; */
 }
+
+.weather-display-wrapper {
+  max-width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff33;
+  border: 1px solid white;
+  border-radius: 20px;
+}
