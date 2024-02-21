@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# React Webapp: Today's Weather :sunny: :partly_sunny:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2-day take home coding assignment given by [Merquri](https://merquri.io/) for Software Engineer (Frontend) job.
 
-## Available Scripts
+Link to the webapp deployed on [Next.js](https://nextjs.org/) is [here](https://).
 
-In the project directory, you can run:
+This is a webapp that displays the current weather of a given city/country.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a [`create-react-app`](https://github.com/facebook/create-react-app) project. Please refer to the project page for __run__ and __build__ instructions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Given Scenario
 
-### `npm test`
+### Description
+You need to use React to complete the following tasks. If you are unsure about the question, feel free to make all the necessary UI behavior assumptions and state them in a separate document.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Your answer will be evaluated based on:
+- Feature completeness
+- Code readability (naming convention, comments, etc)
+- Web Standards compliance
+- Code reusability and extendibility
+- Compatible with different display resolution of clients
+- Appropriate user interface style and experience
 
-### `npm run build`
+### Task
+Please refer to the following mockup to implement page “Today’s Weather”.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Requirements
+1. Display information at least based on mock up UI.
+2. User can input city and country name to get weather information and display them on UI. Please use AJAX to get weather information from [OpenWeatherAPI](https://openweathermap.org/api).
+3. User can find their records in search history, and can click search button to call api again. Can click delete button to remove the record.
+4. If user inputs invalid city or country name, show appropriate message on UI.
+5. You may choose to build either dark or light mock up based on your own preference.
+6. Optional: You may build both theme with a theme switcher
