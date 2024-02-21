@@ -41,6 +41,7 @@
 .weather-icon {
     position: relative;
     top: -100px;
+    left: 20px;
     max-width: 100%;
 }
 

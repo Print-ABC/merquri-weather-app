@@ -1,16 +1,6 @@
 import './search.css'
 
-const SearchBar = ({ search, setSearch, onSearchChange }) => {
-
-    const handleOnChange = (searchInput) => {
-        setSearch(searchInput)
-        onSearchChange(searchInput)
-    }
-
-    const searchPressed = () => {
-        console.log(search)
-    }
-
+const SearchBar = ({ setSearchQuery, startSearch }) => {
     return (
         <div className='search-wrapper'>
             {/* Input bar */}
@@ -18,13 +8,13 @@ const SearchBar = ({ search, setSearch, onSearchChange }) => {
                 <label>Country</label>
                 <input
                     type='text'
-                    onChange={(e) => handleOnChange(e.target.value)}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                 />
             </div>
             {/* Search button */}
             <button
                 type='submit'
-                onClick={searchPressed}>
+                onClick={startSearch}>
                 <i className='gg-search'></i>
             </button>
         </div>
