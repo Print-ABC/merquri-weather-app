@@ -4,8 +4,18 @@
 
 This is a webapp that displays the current weather of a given city/country.
 
+Refer to attached file, _Requirements_Readme.pdf_, for more info.
+
 ## Getting Started
 
+### Environment variables
+1. Add a __.env__ file in the root folder.
+2. Add your openweather api key inside file __.env__ under the variable name `REACT_APP_API_KEY_OPENWEATHER`.
+```
+REACT_APP_API_KEY_OPENWEATHER=<paste your api key here>
+```
+
+### Run and build
 This is a [`create-react-app`](https://github.com/facebook/create-react-app) project. Please refer to the project page for __run__ and __build__ instructions.
 
 ## Given Scenario
